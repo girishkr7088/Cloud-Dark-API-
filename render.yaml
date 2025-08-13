@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: eris
+    env: docker
+    dockerfilePath: ./deploy/Dockerfile.render
+    repo: https://github.com/kasramp/Eris.git
+    region: oregon
+    plan: free
+    branch: master
+    numInstances: 1
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: OPENWEATHERMAP_API_KEY
+        sync: false
+      - key: SEGMENTIO_WRITE_API_KEY
+        sync: false
+      - key: ACTUATOR_USERNAME
+        sync: false
+      - key: ACTUATOR_PASSWORD
+        sync: false

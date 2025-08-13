@@ -1,0 +1,26 @@
+{
+  "name": "Eris Weather API",
+  "description": "Eris is an open source weather API for getting the current weather condition across the globe",
+  "repository": "https://github.com/kasramp/Eris/",
+  "logo": "https://raw.githubusercontent.com/kasramp/Eris/master/static/logo/logo.png",
+  "keywords": ["Eris", "Weather API", "Java", "Spring Boot"],
+  "env": {
+    "OPENWEATHERMAP_API_KEY": {
+      "description": "API key for the OpenWeatherMap API",
+      "value": "OpenWeatherMap API key"
+    },
+    "ACTUATOR_USERNAME": {
+      "description": "Username of the actuator endpoints",
+      "value": "username"
+    },
+    "ACTUATOR_PASSWORD": {
+      "description": "Password of the actuator endpoints",
+      "value": "password"
+    },
+    "SEGMENTIO_WRITE_API_KEY": {
+      "description": "API Key for the Segment.io analytics",
+      "required": false,
+      "value": "Segmentio API key"
+    }
+  }
+}
